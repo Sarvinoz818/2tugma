@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugmalar</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<h1></h1>
+    <button onclick="salom()">Tugma 1</button>
+    <button onclick="fonOzgartir()">Tugma 2</button>
+
+    <p id="text"></p>
+
+    <script>
+        function salom() {
+            document.getElementById('text').textContent = 'Salom';
+        }
+
+        function fonOzgartir() {
+            document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+    </script>
+</body>
+</html>
